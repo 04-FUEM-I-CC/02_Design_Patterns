@@ -2,13 +2,15 @@ package com.cc.java.singleton;
 
 public class Singleton {
 
-    private static Singleton instance;
+    private static Singleton instance;  // Klasse
 
-    private int counter;
+    private int counter; // Objekt
 
     private Singleton(){
 
     }  
+
+    // ... in der Klasse
 
     public static Singleton getInstance() {
     
@@ -21,7 +23,18 @@ public class Singleton {
     
     }
     
-  
+        // ... im Objekt
+
+        // Getter für counter
+        public int getCounter() {
+            return counter;
+        }
+
+        // Event? --> counter  = counter + 1
+        public void actOnEvent() {
+            counter ++;
+        }
+
 
 
 
