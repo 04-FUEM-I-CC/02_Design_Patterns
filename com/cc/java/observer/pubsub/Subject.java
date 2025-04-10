@@ -7,9 +7,9 @@ import com.cc.java.observer.interfaces.Observable;
 import com.cc.java.tools.Helper;
 
 public class Subject implements Observable{
-   
-   private String state;
-   private List<Observer>observers;
+
+ private String state;
+    private List<Observer>observers;
 
     public Subject() {
        observers = new ArrayList<>();
@@ -49,10 +49,18 @@ public class Subject implements Observable{
         }
     }
 
-   // Observer holen sich den neuen Status ...
+      // Observer holen sich den neuen Status ...
     public String getState() {
         return state;
     }
+
+  
+
+
+
+
+    
+
 
 }
 
